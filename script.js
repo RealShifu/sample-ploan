@@ -9,7 +9,7 @@ let formData = {
     productDetails: {}
 };
 
-let currentPage = 6;
+let currentPage = 1;
 
 function renderPage() {
     app.innerHTML = '';
