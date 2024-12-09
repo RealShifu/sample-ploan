@@ -9,7 +9,7 @@ let formData = {
     productDetails: {}
 };
 
-let currentPage = 1;
+let currentPage = 6;
 
 function renderPage() {
     app.innerHTML = '';
@@ -216,40 +216,40 @@ function renderPage6() {
         <h2>Summary</h2>
         <div class="summary-section">
             <h3>Personal Details</h3>
-            <div class="summary-field"><span>Name:</span><span class="summary-field-value">${formData.personalDetails.name || 'N/A'}</span></div>
-            <div class="summary-field"><span>Date of Birth:</span><span class="summary-field-value">${formData.personalDetails.dob || 'N/A'}</span></div>
-            <div class="summary-field"><span>Email:</span><span class="summary-field-value">${formData.personalDetails.email || 'N/A'}</span></div>
-            <div class="summary-field"><span>Gender:</span><span class="summary-field-value">${formData.personalDetails.gender || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Name:</span><span class="summary-field-value">${formData.personalDetails.name || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Date of Birth:</span><span class="summary-field-value">${formData.personalDetails.dob || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Email:</span><span class="summary-field-value">${formData.personalDetails.email || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Gender:</span><span class="summary-field-value">${formData.personalDetails.gender || 'N/A'}</span></div>
         </div>
         <div class="summary-section">
             <h3>Residential Info</h3>
-            <div class="summary-field"><span>Address:</span><span class="summary-field-value">${formData.residentialInfo.addressLine1 || 'N/A'}</span></div>
-            <div class="summary-field"><span>Address Line 2:</span><span class="summary-field-value">${formData.residentialInfo.addressLine2 || 'N/A'}</span></div>
-            <div class="summary-field"><span>Address Line 3:</span><span class="summary-field-value">${formData.residentialInfo.addressLine3 || '-'}</span></div>
-            <div class="summary-field"><span>Postcode:</span><span class="summary-field-value">${formData.residentialInfo.postcode || 'N/A'}</span></div>
-            <div class="summary-field"><span>City:</span><span class="summary-field-value">${formData.residentialInfo.city || 'N/A'}</span></div>
-            <div class="summary-field"><span>State:</span><span class="summary-field-value">${formData.residentialInfo.state || 'N/A'}</span></div>
-            <div class="summary-field"><span>Country:</span><span class="summary-field-value">${formData.residentialInfo.country || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Address:</span><span class="summary-field-value">${formData.residentialInfo.addressLine1 || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Address Line 2:</span><span class="summary-field-value">${formData.residentialInfo.addressLine2 || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Address Line 3:</span><span class="summary-field-value">${formData.residentialInfo.addressLine3 || '-'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Postcode:</span><span class="summary-field-value">${formData.residentialInfo.postcode || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">City:</span><span class="summary-field-value">${formData.residentialInfo.city || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">State:</span><span class="summary-field-value">${formData.residentialInfo.state || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Country:</span><span class="summary-field-value">${formData.residentialInfo.country || 'N/A'}</span></div>
         </div>
         <div class="summary-section">
             <h3>Employment Info</h3>
-            <div class="summary-field"><span>Company Name:</span><span class="summary-field-value">${formData.employmentInfo.companyName || 'N/A'}</span></div>
-            <div class="summary-field"><span>Company Address:</span><span class="summary-field-value">${formData.employmentInfo.companyAddressLine1 || 'N/A'}</span></div>
-            <div class="summary-field"><span>Line 2:</span><span class="summary-field-value">${formData.employmentInfo.companyAddressLine2 || '-'}</span></div>
-            <div class="summary-field"><span>Line 3:</span><span class="summary-field-value">${formData.employmentInfo.companyAddressLine3 || '-'}</span></div>
-            <div class="summary-field"><span>City:</span><span class="summary-field-value">${formData.employmentInfo.companyCity || 'N/A'}</span></div>
-            <div class="summary-field"><span>State:</span><span class="summary-field-value">${formData.employmentInfo.companyState || 'N/A'}</span></div>
-            <div class="summary-field"><span>Country:</span><span class="summary-field-value">${formData.employmentInfo.companyCountry || 'N/A'}</span></div>
-            <div class="summary-field"><span>Job Title:</span><span class="summary-field-value">${formData.employmentInfo.jobTitle || 'N/A'}</span></div>
-            <div class="summary-field"><span>Monthly Gross Income:</span><span class="summary-field-value">${formData.employmentInfo.monthlyGrossIncome || 'N/A'}</span></div>
-            <div class="summary-field"><span>Office Email:</span><span class="summary-field-value">${formData.employmentInfo.officeEmail || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Company Name:</span><span class="summary-field-value">${formData.employmentInfo.companyName || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Company Address:</span><span class="summary-field-value">${formData.employmentInfo.companyAddressLine1 || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Line 2:</span><span class="summary-field-value">${formData.employmentInfo.companyAddressLine2 || '-'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Line 3:</span><span class="summary-field-value">${formData.employmentInfo.companyAddressLine3 || '-'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">City:</span><span class="summary-field-value">${formData.employmentInfo.companyCity || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">State:</span><span class="summary-field-value">${formData.employmentInfo.companyState || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Country:</span><span class="summary-field-value">${formData.employmentInfo.companyCountry || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Job Title:</span><span class="summary-field-value">${formData.employmentInfo.jobTitle || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Monthly Gross Income:</span><span class="summary-field-value">${formData.employmentInfo.monthlyGrossIncome || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Office Email:</span><span class="summary-field-value">${formData.employmentInfo.officeEmail || 'N/A'}</span></div>
         </div>
         <div class="summary-section">
             <h3>Financing Details</h3>
-            <div class="summary-field"><span>Loan Amount:</span><span class="summary-field-value">${formData.productDetails.loanAmount || 'N/A'}</span></div>
-            <div class="summary-field"><span>Tenure:</span><span class="summary-field-value">${formData.productDetails.tenure || 'N/A'} Years</span></div>
-            <div class="summary-field"><span>Interest Rate:</span><span class="summary-field-value">${formData.productDetails.interestRate || 'N/A'}%</span></div>
-            <div class="summary-field"><span>Monthly Repayment:</span><span class="summary-field-value">${formData.productDetails.monthlyRepayment || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Loan Amount:</span><span class="summary-field-value">${formData.productDetails.loanAmount || 'N/A'}</span></div>
+            <div class="summary-field"><span class="summary-field-title">Tenure:</span><span class="summary-field-value">${formData.productDetails.tenure || 'N/A'} Years</span></div>
+            <div class="summary-field"><span class="summary-field-title">Interest Rate:</span><span class="summary-field-value">${formData.productDetails.interestRate || 'N/A'}%</span></div>
+            <div class="summary-field"><span class="summary-field-title">Monthly Repayment:</span><span class="summary-field-value">${formData.productDetails.monthlyRepayment || 'N/A'}</span></div>
         </div>
         <div class="button-group">
             <button onclick="prevPage()">Back</button>

@@ -3,18 +3,17 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f0f0f0;
-    overflow: hidden;
+    overflow: scroll;
 }
 
 #app-container {
     margin: 48px 20px;
     padding-bottom: 48px;
-    overflow-y: auto;
     max-height: calc(100vh - 96px);
 }
 
 .applyloan-title {
-    padding: 30px 10px 10px 10px;
+    padding-bottom: 20px;
 }
 
 .applyloan-title span {
@@ -39,7 +38,7 @@ header {
     border-bottom: 1px solid #ddd;
     display: flex;
     align-items: center;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 10;
 }
@@ -138,6 +137,15 @@ h3 {
     grid-template-columns: 60% auto;
 }
 
+.summary-field-title{
+    font-weight: bold;
+    color: #606569
+}
+
 .summary-field-value{
     word-break: break-word;
+}
+
+#nothing{
+    height: 48px;
 }
