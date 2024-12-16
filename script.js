@@ -1530,7 +1530,8 @@ function nextCheckerPage() {
 }
 
 function prevCheckerPage() {
-    if (currentPage > 14 && currentPage < 17) {
+    const confirmation = window.confirm("Are you sure you want to log out?");
+    if (confirmation && currentPage > 14 && currentPage < 17) {
         currentPage--;
         formData.loginDetails.financeType = '';
         formData.loginDetails.nric = '';
