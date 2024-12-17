@@ -311,7 +311,7 @@ function renderPloanPage6() {
         </div>
         <div class="button-group">
             <button onclick="prevPloanPage()">Back</button>
-            <button onclick="submitProductForm()">Submit</button>
+            <button onclick="submitPloanForm()">Submit</button>
         </div>
     `;
 }
@@ -613,14 +613,14 @@ function submitPloanForm() {
 }
 
 function nextPloanPage() {
-    if (currentPage > 1 && currentPage < 7) {
+    if (currentPage >= 0 && currentPage <= 7) {
         currentPage++;
         renderPage();
     }
 }
 
 function prevPloanPage() {
-    if (currentPage > 1 && currentPage < 7) {
+    if (currentPage >= 0 && currentPage <= 7) {
         currentPage--;
         renderPage();
     }
